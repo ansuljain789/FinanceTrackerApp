@@ -184,13 +184,22 @@ To run the full-stack application, ensure you have two terminal windows open:
 
 ## 📸 Proof of Work
 
-### 🖥️ Dashboard Overview
-*(Add your screenshot here: `![Dashboard](file:///c:/path/to/screenshot1.png)`) *
+### � Secure Authentication
+![Authentication](screenshots/auth.png)
+
+### 📈 Dashboard Summary
+![Dashboard](screenshots/dashboard.png)
+
+### 📂 Empty State (Initial View)
+![Dashboard Empty](screenshots/dashboard_empty.png)
 
 ### 📊 Budget Monitoring
-*(Add your screenshot here: `![Budgets](file:///c:/path/to/screenshot2.png)`) *
+![Budgets](screenshots/budgets.png)
 
-### 🛠️ API Load Testing (Backend)
-*(Add your screenshot here: `![Postman/Backend](file:///c:/path/to/screenshot3.png)`) *
+### 📂 Transaction History
+![History](screenshots/history.png)
+
+### 🛠️ Add Transaction Modal
+![Modal](screenshots/modal.png)
 
 ---

@@ -47,7 +47,10 @@
 
 .form-group label {
     font-size: 0.85rem;
-    color: #888;
+    color: #4ecca3;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    text-align: left;
 }
 
 

@@ -18,7 +18,7 @@ const Register = () => {
         }
         try {
             await register(email, password);
-            navigate('/login', { state: { message: 'Registration successful! Please login.' } });
+            navigate('/', { state: { message: 'Registration successful! Please login.' } });
         } catch (err) {
             setError(err.response?.data?.message || 'Failed to register');
         }
@@ -59,7 +59,7 @@ const Register = () => {
                     </div>
                     <button type="submit" className="auth-btn">Register</button>
                 </form>
-                <p>Already have an account? <Link to="/login">Login</Link></p>
+                <p>Already have an account? <Link to="/">Login</Link></p>
             </div>
         </div>
     );
