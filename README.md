@@ -194,6 +194,3 @@ To run the full-stack application, ensure you have two terminal windows open:
 *(Add your screenshot here: `![Postman/Backend](file:///c:/path/to/screenshot3.png)`) *
 
 ---
-
-## 📜 License
-Released under the ISC License. © 2026 FinanceTracker.
