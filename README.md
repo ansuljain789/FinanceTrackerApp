@@ -119,32 +119,56 @@ AssignmentHyscalar/
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
-- Node.js (v18+)
-- MongoDB (Local or Atlas)
+- **Node.js**: v18.0.0 or higher
+- **NPM**: v9.0.0 or higher
+- **MongoDB**: A running instance (Local or Atlas)
+- **Git**: For version control
 
-### 1. Backend Configuration
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/AssignmentHyscalar.git
+cd AssignmentHyscalar
+```
+
+### 2. Backend Configuration
+Navigate to the server directory and install dependencies:
 ```bash
 cd server
 npm install
 ```
-Create a `.env` file in the `server` directory:
+
+Create a `.env` file in the `server` directory and configure the following:
 ```env
-PORT=5000
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_super_secret_key
-```
-Start server:
-```bash
-npm start # using nodemon
+PORT=5000                     # Port for the Express server
+MONGODB_URI=your_mongodb_uri   # Your MongoDB Connection String
+JWT_SECRET=your_super_secret   # A secure string for JWT signing
 ```
 
-### 2. Frontend Configuration
+Start the backend server:
 ```bash
-cd client
+npm start # Starts the server using nodemon
+```
+*The server will be running at `http://localhost:5000`*
+
+### 3. Frontend Configuration
+Navigate to the client directory and install dependencies:
+```bash
+cd ../client
 npm install
+```
+
+Start the development server:
+```bash
 npm run dev
 ```
-Open `http://localhost:5173` in your browser.
+*The application will be accessible at `http://localhost:5173`*
+
+---
+
+## 🏃 Quick Start (Development)
+To run the full-stack application, ensure you have two terminal windows open:
+1. **Terminal 1**: Running the backend (`cd server && npm start`)
+2. **Terminal 2**: Running the frontend (`cd client && npm run dev`)
 
 ---
 
@@ -155,8 +179,6 @@ Open `http://localhost:5173` in your browser.
 2. **Data Integrity**: Add transaction -> Check History -> Verify Dashboard counters update instantly.
 3. **Cross-Month Budgets**: Set budget for Feb -> Add Feb transaction -> Set budget for March -> Verify isolation of data.
 
-> [!TIP]
-> **Industrial Benchmarking**: The API response time for transaction aggregation is optimized using MongoDB indexes on `userId` and `date`.
 
 ---
 
